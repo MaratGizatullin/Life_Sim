@@ -18,6 +18,7 @@ public class Employee {
 	String surname;
 	int age;
 	double salary;
+	final double minSalary = 12000.0;
 	String department;
 	
 	double doublingSalary() {
@@ -25,8 +26,7 @@ public class Employee {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 }
