@@ -1,5 +1,7 @@
 package human;
 
+import technic.Car;
+
 class BankAccount {
 	
 	int id;
@@ -62,32 +64,6 @@ class Student {
 	
 }
 
-// Описывает параметры относящиеся к работнику
-class Employee {
-	Employee(int id, String surname){
-		this.id = id;
-		this.surname = surname;
-	}
-	
-	Employee(int id, String surname, int age, double salary, String department) {
-		this.id = id;
-		this.surname = surname;
-		this.age = age;
-		this.salary = salary;
-		this.department = department;
-	}
-	
-	int id;
-	String surname;
-	int age;
-	double salary;
-	String department;
-	
-	double doublingSalary() {
-		return salary *= 2;
-	}
-}
-
 //Описывает параметры человека. Включает в себя все ранее созданные классы
 public class Human {
 	
@@ -145,6 +121,15 @@ public class Human {
 		Human person2 = new Human(0002, "Kevin", "Smith");
 		
 		System.out.println(person2.name);
+		
+		Car car1 = new Car();
+		Car car2 = new Car();
+		Car car3 = new Car();
+		
+		System.out.println(Car.idSetter + " " + car1.carId);
+		System.out.println(Car.idSetter + " " + car2.carId);
+		System.out.println(Car.idSetter + " " + car3.carId);
+		
 	}
 
 }
